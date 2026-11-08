@@ -1,0 +1,307 @@
+[
+      {
+        "id": "one-day-youtube-2017",
+        "categories": ["milestones"],
+        "is_historical_milestone": true,
+        "title": "One Day LP",
+        "text_content": {
+          "type": "quote_artist",
+          "text": "I just sat in my room, wrote this song in 20 minutes, and posted it. I never expected it to change my entire life.",
+          "author": "Tate McRae"
+        },
+        "date": {
+          "raw": "2017-08-10",
+          "display": "10.08.2017",
+          "is_confirmed": true
+        },
+        "media_type": "single_photo",
+        "hero_media": [
+          {
+            "id": "hero_photo_1",
+            "url": "images/milestones/oneday.webp"
+          },
+          {
+            "id": "hero_photo_2",
+            "url": "images/milestones/oneday.webp"
+          }
+        ],
+        "timeline_media": {
+          "id": "photo_1",
+          "url": "images/milestones/oneday.webp",
+          "colors": {
+            "bg_primary": "#652982",
+            "bg_secondary": "#ad4296",
+            "text_main": "#BF9CCF",
+            "accent_ball": "#1c1754"
+          }
+        },
+        "action_buttons": [
+          { "type": "watch", "label": "WATCH ON YOUTUBE", "url": "#" },
+          { "type": "listen", "label": "STREAM", "url": "#" }
+        ]
+      },
+  {
+                "id": "you-broke-me-first-2020",
+    "categories": ["milestones"],
+    "is_historical_milestone": true,
+    "title": "you broke me first",
+    "text_content": {
+      "type": "journal_review",
+      "text": "The breakthrough anthem that solidified McRae's status as a global pop force, amassing billions of streams.",
+      "author": "Billboard"
+    },
+    "date": {
+      "raw": "2020-04-17",
+      "display": "17.04.2020",
+      "is_confirmed": true
+    },
+    "media_type": "single_photo",
+    "hero_media": [
+      {
+        "id": "hero_photo_1",
+        "url": "images/milestones/youbrokeme1.jpg"
+      },
+      {
+        "id": "hero_photo_2",
+        "url": "images/milestones/youbrokeme1.jpg"
+      }
+    ],
+    "timeline_media": {
+      "id": "photo_1",
+      "url": "images/milestones/youbrokeme1.jpg",
+      "colors": {
+          "bg_primary": "#ba1b3c",
+          "bg_secondary": "#951234",
+          "text_main": "#2b0919",
+          "accent_ball": "#2b0919"
+      }
+    },
+    "action_buttons": [
+      { "type": "listen", "label": "LISTEN NOW", "url": "#" },
+      { "type": "watch", "label": "WATCH VIDEO", "url": "#" }
+    ]
+  },
+  {
+      "id": "i-used-to-think-i-could-fly-2022",
+"categories": ["milestones"],
+"is_historical_milestone": true,
+"title": "i used to think i could fly",
+"text_content": {
+"type": "journal_review",
+"text": "The breakthrough anthem that solidified McRae's status as a global pop force, amassing billions of streams.",
+"author": "Billboard"
+},
+"date": {
+"raw": "2022-05-27",
+"display": "27.05.2022",
+"is_confirmed": true
+},
+"media_type": "single_photo",
+"hero_media": [
+  {
+    "id": "hero_photo_1",
+    "url": "images/milestones/iutticf.webp"
+  },
+  {
+    "id": "hero_photo_2",
+    "url": "images/milestones/iutticf.webp"
+  }
+],
+"timeline_media": {
+  "id": "photo_1",
+  "url": "images/milestones/iutticf.webp",
+  "colors": {
+      "bg_primary": "#192717",
+      "bg_secondary": "#c52456",
+      "text_main": "#cfc6c4",
+      "accent_ball": "#1e1c2a"
+  }
+},
+"action_buttons": [
+{ "type": "listen", "label": "LISTEN NOW", "url": "#" },
+{ "type": "info", "label": "INFORMATION", "url": "#" }
+]
+},
+  {
+                "id": "greedy-single-2023",
+    "categories": ["milestones"],
+    "is_historical_milestone": true,
+    "title": "greedy",
+    "text_content": {
+      "type": "journal_review",
+      "text": "A masterclass in modern pop choreography and hypnotic production, hitting No. 1 on the global charts.",
+      "author": "Vogue"
+    },
+    "date": {
+      "raw": "2023-09-15",
+      "display": "15.09.2023",
+      "is_confirmed": true
+    },
+    "media_type": "single_photo",
+    "hero_media": [
+      {
+        "id": "hero_photo_1",
+        "url": "images/milestones/greedy.jpg"
+      },
+      {
+        "id": "hero_photo_2",
+        "url": "images/milestones/greedy.jpg"
+      }
+    ],
+    "timeline_media": {
+      "id": "photo_1",
+      "url": "images/milestones/greedy.jpg",
+      "colors": {
+          "bg_primary": "#f6f6f6",
+          "bg_secondary": "#d2d2d2",
+          "text_main": "#161616",
+          "accent_ball": "#161616"
+      }
+    },
+    "action_buttons": [
+      { "type": "listen", "label": "LISTEN", "url": "#" },
+      { "type": "buy_vinyl", "label": "BUY VINYL", "url": "#" }
+    ]
+  },
+  {
+                "id": "think-later-2023",
+    "categories": ["milestones"],
+    "is_historical_milestone": true,
+    "title": "THINK LATER",
+    "text_content": {
+      "type": "journal_review",
+      "text": "A masterclass in modern pop choreography and hypnotic production, hitting No. 1 on the global charts.",
+      "author": "Vogue"
+    },
+    "date": {
+      "raw": "2023-12-08",
+      "display": "08.12.2023",
+      "is_confirmed": true
+    },
+    "media_type": "single_photo",
+    "hero_media": [
+      {
+        "id": "hero_photo_1",
+        "url": "images/milestones/thinklater.jpg"
+      },
+      {
+        "id": "hero_photo_2",
+        "url": "images/milestones/thinklater.jpg"
+      }
+    ],
+    "timeline_media": {
+      "id": "photo_1",
+      "url": "images/milestones/thinklater.jpg",
+      "colors": {
+          "bg_primary": "#1e1e1e",
+          "bg_secondary": "#a35d54",
+          "text_main": "#57619b",
+          "accent_ball": "#c3bdbf"
+      }
+    },
+    "action_buttons": [
+      { "type": "listen", "label": "LISTEN", "url": "#" },
+      { "type": "buy_vinyl", "label": "BUY VINYL", "url": "#" }
+    ]
+  },
+  
+  {
+                "id": "so-close-to-what-album-era",
+    "categories": ["milestones"],
+    "is_historical_milestone": true,
+    "title": "So Close To What",
+    "text_content": {
+      "type": "journal_review",
+      "text": "An intimate, sonically pristine pop record that explores growth, heartbreak, and high-fashion minimalism.",
+      "author": "Apple Music Editorial"
+    },
+    "date": {
+      "raw": "2025-02-21",
+      "display": "21.02.2025",
+      "is_confirmed": true
+    },
+    "media_type": "single_photo",
+    "hero_media": [
+      {
+        "id": "hero_photo_1",
+        "url": "images/milestones/sc2w.png"
+      },
+      {
+        "id": "hero_photo_2",
+        "url": "images/milestones/sc2w.png"
+      }
+    ],
+    "timeline_media": {
+      "id": "photo_1",
+      "url": "images/milestones/sc2w.png",
+      "colors": {
+          "bg_primary": "#2a2825",
+          "bg_secondary": "#534a40",
+          "text_main": "#986b4a",
+          "accent_ball": "#d3cfce"
+      }
+    },
+    "action_buttons": [
+      { "type": "listen", "label": "LISTEN ALBUM", "url": "#" },
+      { "type": "buy_vinyl", "label": "ORDER VINYL", "url": "#" }
+    ]
+  },
+  {
+    "id": "housewife-single-2026",
+    "categories": ["milestones"],
+    "is_historical_milestone": true,
+    "title": "Housewife",
+    "type_label": "SINGLE",
+    "text_content": {
+      "type": "quote_artist",
+      "text": "It’s kind of about a woman who can’t be contained",
+      "author": "Tate McRae"
+    },
+    "date": {
+      "raw": "2026-10-15",
+      "display": "15.10.2026",
+      "full": "October 15, 2026",
+      "is_confirmed": true
+    },
+    "media_type": "single_photo",
+    "hero_media": [
+      {
+        "id": "hero_1",
+        "url": "images/milestones/housewife.webp",
+        "object_position": "center 20%"
+      }
+    ],
+    "timeline_media": {
+      "url": "images/milestones/housewife.webp",
+      "colors": {
+        "bg_primary": "#46401f",
+        "bg_secondary": "#982122",
+        "text_main": "#dab194",
+        "accent_ball": "#b1b1af"
+      }
+    },
+    "action_buttons": [
+      { "type": "watch", "label": "WATCH NOW", "url": "https://www.youtube.com/watch?v=DPEodkHzH-s" },
+      { "type": "buy", "label": "BUY CD/VINYL", "url": "https://tatemcrae.lnk.to/housewife" }
+    ],
+    "long_content": [
+      {
+        "type": "paragraph",
+        "text": "Housewife marked a clear shift in Tate McRae’s visual language. The single leaned into a more cinematic, almost editorial aesthetic that felt closer to high fashion than traditional pop videos."
+      },
+      {
+        "type": "paragraph",
+        "text": "Shot on a private estate, the visual narrative focused on isolation and quiet tension. The color palette from this era later became the foundation for the website’s dynamic theming system."
+      },
+      {
+        "type": "quote",
+        "text": "I wanted something that felt both intimate and slightly dangerous.",
+        "author": "Tate McRae"
+      },
+      {
+        "type": "paragraph",
+        "text": "The track itself balances vulnerability with a sharp, confident delivery — a combination that has defined much of her recent work."
+      }
+    ]
+  }
+]
