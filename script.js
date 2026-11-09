@@ -97,6 +97,7 @@ function renderTimeline(events) {
         const activeIndex = Math.round(raw);
         const clamped = Math.max(0, Math.min(activeIndex, events.length - 1));
 
+        // Анимация карточек
         document.querySelectorAll('.timeline-card').forEach((card, i) => {
             const dist = Math.abs(i - raw);
             const scale = 1.03 - Math.min(dist, 1.2) * 0.08;
@@ -112,9 +113,22 @@ function renderTimeline(events) {
 
         scrollTimeout = setTimeout(() => {
             if (isAnimating) return;
-            applyColors(clamped, events);
-            updateHero(clamped, events, true);
-        }, 40);
+
+            // Если статья открыта — сначала закрываем её
+            const panel = document.getElementById('article-panel');
+            if (panel && panel.classList.contains('open')) {
+                closeArticle();
+
+                // Ждём окончания анимации закрытия, потом меняем контент
+                setTimeout(() => {
+                    applyColors(clamped, events);
+                    updateHero(clamped, events, true);
+                }, 750);
+            } else {
+                applyColors(clamped, events);
+                updateHero(clamped, events, true);
+            }
+        }, 50);
     });
 
     applyColors(lastIndex, events);
@@ -122,17 +136,24 @@ function renderTimeline(events) {
 }
 
 function applyColors(index, events) {
-    if (!events[index]) return;
+    if (!events || !events[index]) return;
 
     const c = events[index].timeline_media.colors;
 
-    // Устанавливаем переменные
-    document.documentElement.style.setProperty('--bg-primary', c.bg_primary);
-    document.documentElement.style.setProperty('--bg-secondary', c.bg_secondary);
-    document.documentElement.style.setProperty('--text-main', c.text_main);
-    document.documentElement.style.setProperty('--accent', c.accent_ball);
+    // Основные переменные
+    const root = document.documentElement;
+    root.style.setProperty('--bg-primary', c.bg_primary);
+    root.style.setProperty('--bg-secondary', c.bg_secondary);
+    root.style.setProperty('--text-main', c.text_main);
+    root.style.setProperty('--accent', c.accent_ball);
 
-    // Принудительно красим категории
+    // Фон
+    document.body.style.backgroundColor = c.bg_primary;
+
+    const header = document.querySelector('.header');
+    if (header) header.style.backgroundColor = c.bg_secondary;
+
+    // Категории
     document.querySelectorAll('.cat-btn').forEach(btn => {
         if (btn.classList.contains('active')) {
             btn.style.backgroundColor = c.bg_secondary;
@@ -145,24 +166,35 @@ function applyColors(index, events) {
         }
     });
 
-    // Принудительно красим все основные текстовые элементы
-    // (на случай если где-то остались старые inline-стили)
-    const textElements = document.querySelectorAll(`
-        .current-milestone h2,
-        .subtitle,
-        .hero-description,
-        .hero-author,
-        .more-btn,
-        .btn,
-        .card-title,
-        .card-date,
-        .nav-links a,
-        .header h1.name
-    `);
+    // Все текстовые элементы принудительно
+    const textSelectors = [
+        '.current-milestone h2',
+        '.subtitle',
+        '.hero-description',
+        '.hero-author',
+        '.more-btn',
+        '.btn',
+        '.card-title',
+        '.card-date',
+        '.nav-links a',
+        '.header h1.name',
+        '.less-btn',
+        '.article-right p',
+        '.article-note'
+    ];
 
-    textElements.forEach(el => {
+    document.querySelectorAll(textSelectors.join(',')).forEach(el => {
         el.style.color = c.text_main;
     });
+
+    // Акцентные элементы
+    document.querySelectorAll('.dot, .arrow, .social-link, .socials p').forEach(el => {
+        el.style.color = c.accent_ball;
+        if (el.classList.contains('dot')) {
+            el.style.backgroundColor = c.accent_ball;
+        }
+    });
+    console.log('Applying colors for index:', index, c);
 }
 
 function updateHero(index, events, animate) {
@@ -274,13 +306,14 @@ function closeArticle() {
     const panel = document.getElementById('article-panel');
     const moreBtn = document.querySelector('.more-btn');
 
+    if (!panel) return;
+
     panel.classList.remove('open');
     document.body.classList.remove('article-open');
 
-    // Возвращаем MORE
     setTimeout(() => {
         if (moreBtn) moreBtn.classList.remove('hidden');
-    }, 400);
+    }, 500);
 }
 
 loadTimeline();
