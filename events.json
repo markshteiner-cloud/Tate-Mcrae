@@ -303,5 +303,101 @@
         "text": "The track itself balances vulnerability with a sharp, confident delivery — a combination that has defined much of her recent work."
       }
     ]
-  }
+  },
+      {
+        "id": "tate01-perfume-launch-2026",
+        "categories": ["milestones"],
+        "is_historical_milestone": true,
+        "title": "TATE 01 Perfume Release",
+        "type_label": "PRODUCT LAUNCH",
+        "text_content": {
+          "type": "quote_artist",
+          "text": "I wanted to create a scent that feels bold, a bit nostalgic, and captures the exact mood of being under the lights.",
+          "author": "Tate McRae"
+        },
+        "date": {
+          "raw": "2026-10-28",
+          "display": "28.10.2026",
+          "full": "October 28, 2026",
+          "is_confirmed": true
+        },
+        "media_type": "single_photo",
+        "hero_media": [
+          {
+            "id": "hero_perfume",
+            "url": "images/milestones/tate01.png",
+            "object_position": "center center"
+          }
+        ],
+        "timeline_media": {
+          "url": "images/milestones/tate01.png",
+          "colors": {
+            "bg_primary": "#282523",
+            "bg_secondary": "#c3b091",
+            "text_main": "#f5f2eb",
+            "accent_ball": "#8c8275"
+          }
+        },
+        "action_buttons": [
+          { "type": "buy", "label": "SHOP FRAGRANCE", "url": "https://lnk.to" }
+        ],
+        "long_content": [
+          {
+            "type": "paragraph",
+            "text": "Marking her first major entrepreneurial venture outside of music, Tate McRae officially introduced her debut fragrance, TATE 01, in late October 2026. Designed to mirror her personal artistic evolution, the perfume features an edgy yet clean scent profile."
+          },
+          {
+            "type": "paragraph",
+            "text": "The launch campaign featured stunning minimalist and dark editorial photography, heavily influencing the deep tones and layouts utilized across her dynamic platforms."
+          }
+        ]
+      },
+      {
+        "id": "vsfs-performance-2026",
+        "categories": ["milestones"],
+        "is_historical_milestone": true,
+        "title": "Victoria's Secret Fashion Show",
+        "type_label": "LIVE PERFORMANCE",
+        "text_content": {
+          "type": "quote_artist",
+          "text": "Performing on that iconic runway felt like an absolute fever dream. The energy was unmatched.",
+          "author": "Tate McRae"
+        },
+        "date": {
+          "raw": "2026-10-18",
+          "display": "18.10.2026",
+          "full": "October 18, 2026",
+          "is_confirmed": true
+        },
+        "media_type": "single_photo",
+        "hero_media": [
+          {
+            "id": "hero_vsfs",
+            "url": "images/milestones/levevsfs.png",
+            "object_position": "center 15%"
+          }
+        ],
+        "timeline_media": {
+          "url": "images/milestones/livevsfs2026.png",
+          "colors": {
+            "bg_primary": "#1f1116",
+            "bg_secondary": "#d42e6b",
+            "text_main": "#fceef3",
+            "accent_ball": "#e8a7bc"
+          }
+        },
+        "action_buttons": [
+          { "type": "watch", "label": "WATCH LIVE RUNWAY", "url": "https://youtube.com..." }
+        ],
+        "long_content": [
+          {
+            "type": "paragraph",
+            "text": "On October 18, 2026, Tate McRae took the stage at the highly anticipated Victoria's Secret Fashion Show. Blending high-fashion aesthetics with her signature high-octane choreography, she delivered a show-stopping medley."
+          },
+          {
+            "type": "paragraph",
+            "text": "Her presence on the runway solidified her crossover from a traditional pop star to a global fashion and cultural icon, defining the visual peak of her late 2026 era."
+          }
+        ]
+      }
 ]
