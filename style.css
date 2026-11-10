@@ -63,7 +63,7 @@ a {
 .nav-links a {
     font-size: 15px;
     letter-spacing: 1.3px;
-    color: var(--text-main) !important;
+    color: var(--accent) !important;
     transition: opacity 0.25s ease;
 }
 
@@ -118,12 +118,16 @@ a {
     opacity: 1;
 }
 
+.socials p {
+    color: var(--accent) !important;
+}
+
 /* ===== HERO ===== */
 .current-milestone {
     display: grid;
     grid-template-columns: 1fr 1.15fr;
     gap: 60px;
-    align-items: center;          /* важно: по центру по высоте */
+    align-items: center; /* ← вот это */
     padding: 40px 40px 20px;
     max-width: 1280px;
     margin: 0 auto;
@@ -137,26 +141,24 @@ a {
 
 .media-container {
     width: 100%;
-    aspect-ratio: 4 / 5;   /* ближе к большинству вертикальных фото */
-    height: auto;
-    max-height: 520px;
-    overflow: hidden;
     border-radius: 14px;
+    overflow: hidden;
 }
 
 .main-media {
     width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center 20%;
+    height: auto;
     display: block;
+    border-radius: 14px;
+    object-fit: contain; /* больше не приближает и не обрезает */
 }
 
 .current-milestone .content {
     max-width: none;
     display: flex;
     flex-direction: column;
-    justify-content: center;     /* текст остаётся по центру относительно фото */
+    justify-content: center;
+    padding-top: 10px;
 }
 
 .current-milestone h2 {
@@ -257,7 +259,7 @@ a {
 
 .cat-btn {
     background: transparent;
-    border: 1px solid color-mix(in srgb, var(--accent) 45%, transparent);
+    border: 1px solid var(--bg-secondary);
     color: var(--accent) !important;
     padding: 8px 18px;
     border-radius: 40px;
@@ -268,7 +270,7 @@ a {
     font-family: inherit;
     font-weight: 200;
     text-transform: uppercase;
-    opacity: 0.8;
+    opacity: 0.85;
 }
 
 .cat-btn:hover {
@@ -532,4 +534,11 @@ a {
 
 .less-btn:hover {
     opacity: 0.55;
+}
+
+.hero-title-image {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 12px;
+    display: block;
 }

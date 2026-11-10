@@ -168,6 +168,7 @@
     "categories": ["milestones"],
     "is_historical_milestone": true,
     "title": "THINK LATER",
+    "logo_color": "accent",
     "text_content": {
       "type": "journal_review",
       "text": "A masterclass in modern pop choreography and hypnotic production, hitting No. 1 on the global charts.",
@@ -247,6 +248,56 @@
     ]
   },
   {
+    "id": "tate01-perfume-launch-2026",
+    "categories": ["milestones"],
+    "is_historical_milestone": true,
+    "title": "TATE 01 Perfume Release",
+    "hero_title_type": "image",
+    "hero_title_image": "images/tate01.svg",
+    "type_label": "PRODUCT LAUNCH",
+    "text_content": {
+      "type": "quote_artist",
+      "text": "I wanted to create a scent that feels bold, a bit nostalgic, and captures the exact mood of being under the lights.",
+      "author": "Tate McRae"
+    },
+    "date": {
+      "raw": "2026-10-28",
+      "display": "01.10.2026",
+      "full": "October 1, 2026",
+      "is_confirmed": true
+    },
+    "media_type": "single_photo",
+    "hero_media": [
+      {
+        "id": "hero_perfume",
+        "url": "images/milestones/tate01.jpg",
+        "object_position": "center center"
+      }
+    ],
+    "timeline_media": {
+      "url": "images/milestones/tate01line.jpg",
+      "colors": {
+        "bg_primary": "#ebe3da",
+        "bg_secondary": "#f5f5f5",
+        "text_main": "#000000",
+        "accent_ball": "#b6b8ba"
+      }
+    },
+    "action_buttons": [
+      { "type": "buy", "label": "SHOP FRAGRANCE", "url": "https://www.tatebytm.com/products/eau-de-parfum?Format=100+ml"}
+    ],
+    "long_content": [
+      {
+        "type": "paragraph",
+        "text": "Marking her first major entrepreneurial venture outside of music, Tate McRae officially introduced her debut fragrance, TATE 01, in late October 2026. Designed to mirror her personal artistic evolution, the perfume features an edgy yet clean scent profile."
+      },
+      {
+        "type": "paragraph",
+        "text": "The launch campaign featured stunning minimalist and dark editorial photography, heavily influencing the deep tones and layouts utilized across her dynamic platforms."
+      }
+    ]
+  },
+  {
     "id": "housewife-single-2026",
     "categories": ["milestones"],
     "is_historical_milestone": true,
@@ -305,54 +356,6 @@
     ]
   },
       {
-        "id": "tate01-perfume-launch-2026",
-        "categories": ["milestones"],
-        "is_historical_milestone": true,
-        "title": "TATE 01 Perfume Release",
-        "type_label": "PRODUCT LAUNCH",
-        "text_content": {
-          "type": "quote_artist",
-          "text": "I wanted to create a scent that feels bold, a bit nostalgic, and captures the exact mood of being under the lights.",
-          "author": "Tate McRae"
-        },
-        "date": {
-          "raw": "2026-10-28",
-          "display": "28.10.2026",
-          "full": "October 28, 2026",
-          "is_confirmed": true
-        },
-        "media_type": "single_photo",
-        "hero_media": [
-          {
-            "id": "hero_perfume",
-            "url": "images/milestones/tate01.png",
-            "object_position": "center center"
-          }
-        ],
-        "timeline_media": {
-          "url": "images/milestones/tate01.png",
-          "colors": {
-            "bg_primary": "#282523",
-            "bg_secondary": "#c3b091",
-            "text_main": "#f5f2eb",
-            "accent_ball": "#8c8275"
-          }
-        },
-        "action_buttons": [
-          { "type": "buy", "label": "SHOP FRAGRANCE", "url": "https://lnk.to" }
-        ],
-        "long_content": [
-          {
-            "type": "paragraph",
-            "text": "Marking her first major entrepreneurial venture outside of music, Tate McRae officially introduced her debut fragrance, TATE 01, in late October 2026. Designed to mirror her personal artistic evolution, the perfume features an edgy yet clean scent profile."
-          },
-          {
-            "type": "paragraph",
-            "text": "The launch campaign featured stunning minimalist and dark editorial photography, heavily influencing the deep tones and layouts utilized across her dynamic platforms."
-          }
-        ]
-      },
-      {
         "id": "vsfs-performance-2026",
         "categories": ["milestones"],
         "is_historical_milestone": true,
@@ -373,12 +376,12 @@
         "hero_media": [
           {
             "id": "hero_vsfs",
-            "url": "images/milestones/levevsfs.png",
+            "url": "images/milestones/livevsfs.png",
             "object_position": "center 15%"
           }
         ],
         "timeline_media": {
-          "url": "images/milestones/livevsfs2026.png",
+          "url": "images/milestones/livevsfs.png",
           "colors": {
             "bg_primary": "#1f1116",
             "bg_secondary": "#d42e6b",

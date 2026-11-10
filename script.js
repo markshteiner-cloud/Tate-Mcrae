@@ -149,7 +149,15 @@ function applyColors(index, events) {
 
     // Фон
     document.body.style.backgroundColor = c.bg_primary;
-
+    
+    const logo = document.querySelector('.header h1.name');
+    if (logo) {
+        const logoColor = events[index].logo_color === 'text'
+            ? c.text_main
+            : c.accent_ball;
+        logo.style.color = logoColor;
+    }
+    
     const header = document.querySelector('.header');
     if (header) header.style.backgroundColor = c.bg_secondary;
 
@@ -162,10 +170,10 @@ function applyColors(index, events) {
         } else {
             btn.style.backgroundColor = 'transparent';
             btn.style.color = c.accent_ball;
-            btn.style.borderColor = c.accent_ball;
+            btn.style.borderColor = c.bg_secondary; // всегда secondary
         }
     });
-
+    
     // Все текстовые элементы принудительно
     const textSelectors = [
         '.current-milestone h2',
@@ -203,14 +211,21 @@ function updateHero(index, events, animate) {
     if (!hero) return;
 
     const url = event.hero_media?.[0]?.url || event.timeline_media.url;
-    const pos = event.hero_media?.[0]?.object_position || 'center 15%';
+
+    // Заголовок: текст или картинка
+    let titleHTML = '';
+    if (event.hero_title_type === 'image' && event.hero_title_image) {
+        titleHTML = `<img src="${event.hero_title_image}" alt="${event.title}" class="hero-title-image">`;
+    } else {
+        titleHTML = `<h2>${event.title}</h2>`;
+    }
 
     const html = `
         <div class="media-container">
-            <img src="${url}" alt="${event.title}" class="main-media" style="object-position: ${pos}">
+            <img src="${url}" alt="${event.title}" class="main-media">
         </div>
         <div class="content">
-            <h2>${event.title}</h2>
+            ${titleHTML}
             <p class="subtitle">${event.date.display}</p>
 
             <div class="quote-block">
